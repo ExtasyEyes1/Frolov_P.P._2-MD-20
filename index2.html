@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хлеб да Соль — Бронирование</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Хлеб да Соль</h1>
+    <nav>
+      <a href="index1.html">Меню</a>
+      <a href="">О нас</a>
+      <a href="index2.html">Бронь</a>
+      <a href="index.html">Главная</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Бронирование столика</h2>
+    <form class="container booking-form">
+      <label for="имя" class="form-label">Имя</label>
+      <input class="form-control" type="text" id="имя" placeholder="Ваше имя" required>
+
+      <label for="телефон" class="form-label">Телефон</label>
+      <input class="form-control" type="tel" id="телефон" placeholder="+7 ___ ___ __ __" required>
+
+      <div class="row g-3 два-поля">
+        <div class="col-md-6">
+          <label for="дата" class="form-label">Дата</label>
+          <input class="form-control" type="text" id="дата" placeholder="дд.мм.гггг" readonly>
+        </div>
+        <div class="col-md-6">
+          <label for="время" class="form-label">Время</label>
+          <input class="form-control" type="text" id="время" placeholder="чч:мм" readonly>
+        </div>
+      </div>
+
+      <label class="form-label">Количество гостей</label>
+      <select class="form-select">
+        <option>Выберите количество</option>
+        <option>1 гость</option>
+        <option>2 гостя</option>
+        <option>3 гостя</option>
+        <option>4 гостя</option>
+        <option>5 гостей</option>
+        <option>6–10 гостей</option>
+        <option>Более 10 гостей</option>
+      </select>
+
+      <label class="согласие">
+        <input type="checkbox" required>
+        Согласие на обработку персональных данных
+      </label>
+
+      <button class="btn btn-danger" type="submit">Забронировать</button>
+    </form>
+  </main>
+
+  <footer>
+    <div>
+      <p>
+        <a href="#"><img src="img/Component37.png" alt="Telegram"></a>
+        <a href="#"><img src="img/Component38.png" alt="ВКонтакте"></a>
+        <a href="#"><img src="img/Component39.png" alt="WhatsApp"></a>
+      </p>
+      <span>+7 911 789 42 89</span>
+    </div>
+    <h2>Хлеб да Соль</h2>
+    <address>
+      Просп. 25 октября д. 36<br>
+      <a href="#">Политика и оферта</a>
+    </address>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

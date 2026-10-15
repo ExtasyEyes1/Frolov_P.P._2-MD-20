@@ -1,0 +1,158 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #2c1a0e;
+  background: #3d0f0f;
+  font: 400 15px Montserrat, Arial, sans-serif;
+}
+
+header,
+footer {
+  padding: 16px;
+  color: white;
+  background: #8b1a1a;
+  text-align: center;
+}
+
+header h1,
+footer h2 {
+  margin: 0;
+  font: 400 30px Montserrat, Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  opacity: .6;
+}
+
+main {
+  width: min(100%, 720px);
+  margin: auto;
+  padding: 48px 30px;
+}
+
+main h2 {
+  margin-bottom: 24px;
+  color: #f5f0e8;
+  text-align: center;
+  font: 400 28px Montserrat, Arial, sans-serif;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px 40px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 6px;
+  background: #faf6ee;
+}
+
+form label {
+  margin-top: 8px;
+  font-style: normal;
+}
+
+form .form-control,
+form .form-select {
+  padding: 8px 4px;
+  border: 0;
+  border-bottom: 1px solid #d4c4b0;
+  border-radius: 0;
+  background: transparent;
+}
+
+form .form-control:focus,
+form .form-select:focus {
+  outline: 0;
+  border-bottom-color: #8b1a1a;
+}
+
+.два-поля {
+  margin: 0;
+}
+
+.согласие {
+  font-size: 13px;
+}
+
+.согласие input {
+  width: auto;
+  accent-color: #8b1a1a;
+}
+
+.booking-form button {
+  align-self: center;
+  margin-top: 16px;
+  padding: 10px 48px;
+  border: 1px solid #8b1a1a;
+  color: white;
+  background: #8b1a1a;
+  font: 400 17px Montserrat, Arial, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #8b1a1a;
+  background: #f5f0e8;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #6b1212;
+}
+
+footer p {
+  display: flex;
+  gap: 8px;
+}
+
+footer img {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 50%;
+}
+
+footer address {
+  font-size: 13px;
+  font-style: normal;
+  text-align: right;
+}
+
+footer a {
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+footer {
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+footer a:has(> img):hover img,
+footer a:has(> img):active img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(74%) saturate(3000%) hue-rotate(350deg) brightness(80%);
+}

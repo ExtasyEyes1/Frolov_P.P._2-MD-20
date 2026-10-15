@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #2c1810;
+  background: #f5f0e8;
+  font: 400 15px/1.5 Montserrat, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  padding: 18px;
+  color: white;
+  background: #8b1a1a;
+  text-align: center;
+}
+
+header h1,
+footer strong {
+  font: 400 34px Montserrat, Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 8px;
+  font: 400 16px Montserrat, Arial, sans-serif;
+}
+
+header a:hover {
+  opacity: .7;
+}
+
+.баннер {
+  position: relative;
+  height: 420px;
+}
+
+.баннер > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.кнопка {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid #8b1a1a;
+  color: #8b1a1a;
+  background: white;
+  cursor: pointer;
+  transition: color .2s, background .2s, border-color .2s;
+}
+
+.кнопка:hover {
+  color: white;
+  background: #8b1a1a;
+}
+
+.кнопка:active {
+  border-color: #5a0e0e;
+  color: white;
+  background: #5a0e0e;
+}
+
+.баннер .кнопка {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.о-ресторане,
+.клуб {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 55px 40px;
+}
+
+.о-ресторане > img {
+  flex: 1 1 280px;
+  width: min(100%, 320px);
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.о-ресторане > div {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+h2,
+.акции h3 {
+  font: 400 28px Montserrat, Arial, sans-serif;
+}
+
+.о-ресторане h2 {
+  color: #8b1a1a;
+}
+
+.о-ресторане p {
+  margin: 14px 0;
+  color: #5a3a2a;
+}
+
+.о-ресторане .слоган {
+  color: #2c1810;
+  font: 400 18px Montserrat, Arial, sans-serif;
+}
+
+.плюсы {
+  padding: 50px 40px;
+  background: #faf6ee;
+  text-align: center;
+}
+
+.плюсы > p {
+  margin: 8px 0 35px;
+  color: #8c6a5a;
+}
+
+.плюсы > div,
+.акции,
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.плюсы article {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.плюсы article img {
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.плюсы h3 {
+  margin: 12px 0 5px;
+  font: 400 17px Montserrat, Arial, sans-serif;
+}
+
+.плюсы article p {
+  color: #5a3a2a;
+}
+
+.акции {
+  position: relative;
+  isolation: isolate;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  max-width: none;
+  min-height: 290px;
+  padding: 100px 40px 45px;
+  color: white;
+  background: #9b1c1c url("../img/4.png") no-repeat center top / 100% 50%;
+  text-align: center;
+}
+
+.акции article {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 400px;
+  width: auto;
+}
+
+.акции article + article {
+  border-left: 1px solid rgba(255, 255, 255, .4);
+}
+
+.акции h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.клуб {
+  flex-wrap: wrap;
+}
+
+.клуб > div,
+.клуб form {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.клуб p {
+  margin-top: 8px;
+  color: #8c6a5a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding: 9px 0;
+  border: 0;
+  border-bottom: 1px solid #d4c4b0;
+  background: transparent;
+}
+
+form label {
+  color: #5a3a2a;
+  font-size: 13px;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+footer {
+  align-items: center;
+  justify-content: space-between;
+  max-width: none;
+  padding: 25px 40px;
+  color: white;
+  background: #6b1212;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+footer > div:last-child {
+  align-items: flex-end;
+  font-size: 13px;
+}
+
+footer p {
+  display: flex;
+  gap: 8px;
+}
+
+footer p a {
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 50%;
+}
+
+footer p img {
+  width: 100%;
+  height: 100%;
+}
+
+.акции article {
+  flex: 1 1 300px;
+  width: auto;
+}
+
+.акции article + article {
+  padding-top: 20px;
+  border: 0;
+}
+
+header nav {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.плюсы > div,
+.акции,
+footer {
+  flex-wrap: wrap;
+}
+
+footer > div:last-child {
+  align-items: flex-end;
+}
+
+footer a:has(> img):hover img,
+footer a:has(> img):active img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(74%) saturate(3000%) hue-rotate(350deg) brightness(80%);
+}
